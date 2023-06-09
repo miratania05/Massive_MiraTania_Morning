@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    
+    html {
+        @apply scroll-smooth
+    }
+
+    body {
+        font-family: 'Rancho', cursive; 
+    }
+
+    li {
+        @apply p-4 text-sm hover:underline;
+    }
+
+    button {
+        @apply px-4 py-2 border rounded bg-gradient-to-r from-[#02426E] to-[#02D8F2] text-white hover:scale-105 ease-in-out;
+    }
+
+    h2 {
+        @apply text-xl font-bold ;
+    }
+
+    label {
+        @apply mx-2 my-1 text-[28px];
+    }
+
+    img {
+        @apply w-full h-full object-cover cursor-pointer;
+    }
+
+    input {
+        @apply border-2 m-2 p-2;
+    }
+
+    .text-gradient {
+        background: linear-gradient(to right, #02426E, #02D8F2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        hover:underline;
+      }
+    
+    .bg-gradient {
+        background: linear-gradient(to right, #02426E, #02D8F2);
+    }
+      
+}
